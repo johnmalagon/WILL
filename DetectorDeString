@@ -1,0 +1,24 @@
+/*escribe una funcion que recibira por parametro un array con numeros enteros y strings,
+ deberas retornar un nuevo array con los numeros y reemplazar los strings por 0. la funcion detectorDeString 
+ recibe como parametro: arregloMixto: arreglo y string.
+/*
+ * Completa la función detectorDeStrings a continuación.
+ *
+ * La función debería retornar un ARREGLO.
+ * La función acepta un ARREGLO como parámetro.
+ * 
+ * No modifiques nada por fuera del cuerpo de esta función.
+ */
+function detectorDeString(arregloMixto) {
+  const nuevoArreglo = [];
+
+  for (let elemento of arregloMixto) {
+    if (typeof elemento === "number") {
+      nuevoArreglo.push(elemento);
+    } else {
+      nuevoArreglo.push(0);
+    }
+  }
+
+  return nuevoArreglo;
+}
