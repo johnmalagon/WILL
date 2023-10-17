@@ -11,16 +11,12 @@ la funcion debe retornar 0 . puedes usar el metodo for ... in .
  * La función recibe un OBJETO como parámetro.
  *
  * No modifiques nada por fuera del cuerpo de la función
- */
-
-function vegan(invitados) {
-  let contadorVeganos = 0;
-
-  for (let invitado in invitados) {
-    if (invitados[invitado].preferenciaAlimentaria === "vegano") {
-      contadorVeganos++;
+ */function vegan(invitados) {
+  let veganos = 0;
+  for (let propiedad in invitados) {
+    if (invitados[propiedad] === true) {
+      veganos++;
     }
   }
-
-  return contadorVeganos;
-}
+  return veganos;
+ }

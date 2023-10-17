@@ -19,7 +19,23 @@ function buscarAmigo(amigos, nombre) {
       return amigos[i];
     }
   }
-  return null;
+  return null;function mayorPar(arr) {
+    let mayorPar = null;
+  
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] % 2 === 0) {
+        if (mayorPar === null || arr[i] > mayorPar) {
+          mayorPar = arr[i];
+        }
+      }
+    }
+  
+    if (mayorPar % 2 === 0) {
+      return true;
+    } else {
+      return [mayorPar, false];
+    }
+  }
     
   
 }
